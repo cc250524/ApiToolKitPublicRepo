@@ -12,7 +12,7 @@ lists:
       copyfield.ext.request.pathvariable.id: ext.response.body.id
       set.ext.response.body.type: 'checking'
       set.ext.response.body.label: 'my checking account1234'
-      set.ext.response.body.balance: 2100
+      set.ext.response.body.balance: 3700
 
 - list: createAccount
   steps:
@@ -35,11 +35,11 @@ lists:
       set.ext.response.body#0#.id: 2563
       set.ext.response.body#0#.type: checking
       set.ext.response.body#0#.label: My checking account
-      set.ext.response.body#0#.balance: 50000
+      set.ext.response.body#0#.balance: 51000
       set.ext.response.body#1#.id: 2345
       set.ext.response.body#1#.type: savings
       set.ext.response.body#1#.label: My savings account
-      set.ext.response.body#1#.balance: 200000
+      set.ext.response.body#1#.balance: 210000
   - if: "fields['ext.request.query.customerId'] eq '2'"
     steps:
     - action: copy
